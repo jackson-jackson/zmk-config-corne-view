@@ -14,43 +14,43 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// | TAB   |  Q  |  W  |  F  |  P  |  B  |  --  |  J  |  L  |  U  |  Y  |  ;  | BKSP |
-// | CTRL  |  A  |  R  |  S  |  T  |  G  |  --  |  M  |  N  |  E  |  I  |  O  |  '   |
-// | ENTER |  X  |  C  |  D  |  V  |  Z  |  --  |  K  |  H  |  ,  |  .  |  /  | ESC  |
-//                   | GUI | LWR | SHIFT |  --  | SPC | RSE  | ALT |
+// | TAB   |  Q  |  W  |  F  |  P  |  B  |  --  |   J   |  L  |  U  |  Y  |  ;  | BKSP |
+// | CTRL  |  A  |  R  |  S  |  T  |  G  |  --  |   M   |  N  |  E  |  I  |  O  |  '   |
+// | ENTER |  X  |  C  |  D  |  V  |  Z  |  --  |   K   |  H  |  ,  |  .  |  /  | ESC  |
+//                | GUI | LWR | MT SHIFT |  --  | SPACE | RSE  | ALT |
                         bindings = <
-   &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-   &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-   &kp RET &kp Z &kp X &kp C &kp V   &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
-                  &kp LGUI &mo 1 &mt LSHFT   &kp SPACE &mo 2 &kp RALT
+   &kp TAB   &kp Q &kp W &kp E &kp R &kp T      &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
+   &kp LCTRL &kp A &kp S &kp D &kp F &kp G      &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+   &kp RET &kp Z &kp X &kp C &kp V   &kp B      &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
+                  &kp LGUI &mo 1 &mt LSHIFT A   &kp SPACE &mo 2 &kp RALT
                         >;
                 };
 
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// | TAB   |  1  |  2  |  3  |  4  |  5  |  --  |  6  |  7  |  8  |  9  |  0  | BKSP |
-// | BTCLR | BT1 | BT2 | BT3 | BT4 | BT5 |  --  | LFT | DWN |  UP | RGT |     |      |
-// | ENTER |     |     |     |     |     |  --  |     |     |     |     |     |      |
-//                    | GUI |    | LSHFT |  --  | SPACE |     | ALT |
+// | TAB   |  1  |  2  |  3  |  4  |  5  |  --  |   6   |  7  |  8  |  9  |  0  | BKSP |
+// | BTCLR | BT1 | BT2 | BT3 | BT4 | BT5 |  --  |  LFT  | DWN |  UP | RGT |     |      |
+// | ENTER |     |     |     |     |     |  --  |       |     |     |     |     |      |
+//                 | GUI |    | MT SHIFT |  --  | SPACE |     | ALT |
                         bindings = <
    &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6     &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT   &kp DOWN &kp UP &kp RIGHT &trans &trans
    &kp RET    &trans       &trans       &trans       &trans       &trans         &trans     &trans   &trans &trans    &trans &trans
-                                        &kp LGUI     &trans       &mt LSHFT      &kp SPACE  &trans   &kp RALT
+                                        &kp LGUI     &trans       &mt LSHIFT A   &kp SPACE  &trans   &kp RALT
                         >;
                 };
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// | TAB   |      !       |     @    |        #       |     $    |      %     |  --  |   ^   |   &   |   *   |   (   |   )   |  BKSP  |
-// | CTRL  |  C_VOL_DOWN  |  C_PREV  |  C_PLAY_PAUSE  |  C_NEXT  |  C_VOL_UP  |  --  |   -   |   =   |   [   |   ]   |   \   |    `   |
-// | SHIFT |              |          |                |          |            |  --  |   _   |   +   |   {   |   }   |  "|"  |    ~   |
-//                                                         | GUI |      | SPC |  --  |  ENT  |       |  ALT  |
+// | TAB   |  !  |  @  |  #  |  $  |  %  |  --  |   ^   |   &   |   *   |   (   |   )   |  BKSP  |
+// | CTRL  |     |     |     |     |     |  --  |   -   |   =   |   [   |   ]   |   \   |    `   |
+// | SHIFT |     |     |     |     |     |  --  |   _   |   +   |   {   |   }   |  "|"  |    ~   |
+//               | GUI |       |  SPACE  |  --  |  ENT  |       |  ALT  |
                         bindings = <
    &kp TAB   &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
    &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
    &kp RET   &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
-                      &kp LGUI &trans &mt LSHFT            &kp SPACE &trans    &kp RALT
+                      &kp LGUI &trans &mt LSHIFT A         &kp SPACE &trans    &kp RALT
                         >;
                 };
         };
