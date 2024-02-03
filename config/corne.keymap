@@ -20,7 +20,7 @@
 //                    | GUI | LWR | SHIFT |   | SPC | RSE  | ALT |
                         bindings = <
    &kp TAB   &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L  &kp U     &kp Y   &kp SEMI    &kp BSPC
-   &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp O &kp '
+   &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp O &kp SQT
    &kp RET &kp X &kp C &kp D &kp V &kp Z   &kp K &kp H  &kp COMMA &kp DOT &kp FSLH &kp ESC
                   &kp LGUI &mo 1 &kp LSHFT   &kp SPACE &mo 2 &kp RALT
                         >;
