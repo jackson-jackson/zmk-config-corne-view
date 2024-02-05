@@ -18,6 +18,34 @@
         };
     };
 
+    behaviors {
+        hmr: hmr {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMR";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41>;
+            hold-trigger-on-release;
+        };
+
+        hml: hml {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HML";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41 38 37 36>;
+            hold-trigger-on-release;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -29,10 +57,10 @@
             //                | GUI | LWR | SK SHIFT |  --  |  RSE  |  SPACE  |  ALT  |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R       &kp T    &kp Y  &kp U      &kp I      &kp O    &kp P     &kp BSPC
-&kp LCTRL  &kp A  &kp S  &kp D     &kp F       &kp G    &kp H  &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
-&kp RET    &kp Z  &kp X  &kp C     &kp V       &kp B    &kp N  &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                         &kp LGUI  &sk LSHIFT  &mo 1    &mo 2  &kp SPACE  &kp RALT
+&kp TAB    &kp Q          &kp W                &kp E            &kp R                &kp T    &kp Y  &kp U                 &kp I             &kp O                 &kp P               &kp BSPC
+&kp LCTRL  &hml LSHIFT A  &hml LEFT_CONTROL R  &hml LEFT_ALT S  &hml LEFT_COMMAND T  &kp G    &kp H  &hmr RIGHT_COMMAND N  &hmr RIGHT_ALT E  &hmr RIGHT_CONTROL I  &hmr RIGHT_SHIFT O  &kp SQT
+&kp RET    &kp Z          &kp X                &kp C            &kp V                &kp B    &kp N  &kp M                 &kp COMMA         &kp DOT               &kp FSLH            &kp ESC
+                                               &kp LGUI         &sk LSHIFT           &mo 1    &mo 2  &kp SPACE             &kp RALT
             >;
         };
 
@@ -44,10 +72,10 @@
             //               | GUI | SK SHIFT  | LWR |  --  |  RSE  |   SPACE   | ALT |
 
             bindings = <
-&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7     &kp N8    &kp N9     &kp N0  &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN   &kp UP    &kp RIGHT  &trans  &trans
-&kp RET     &trans        &trans        &trans        &trans        &trans          &trans    &trans     &trans    &trans     &trans  &trans
-                                        &kp LGUI      &sk LSHIFT    &trans          &trans    &kp SPACE  &kp RALT
+&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6  &kp N7     &kp N8    &kp N9  &kp N0     &kp BSPC
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &kp LEFT   &kp DOWN  &kp UP  &kp RIGHT  &trans
+&kp RET     &trans        &trans        &trans        &trans        &trans          &trans  &trans     &trans    &trans  &trans     &trans
+                                        &kp LGUI      &sk LSHIFT    &trans          &trans  &kp SPACE  &kp RALT
             >;
         };
 
