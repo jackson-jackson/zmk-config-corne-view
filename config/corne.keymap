@@ -89,9 +89,9 @@
             //                | GUI | LWR | SK SHIFT |  --  |  RSE  |  SPACE  |  ALT  |
 
             bindings = <
-&kp TAB    &mt C_QUIT Q   &kp W                &kp E            &kp R                &layer_3_ht 3 T        &kp Y            &kp U                 &kp I          &kp O                 &kp P          &kp BSPC
-&kp LCTRL  &hml LSHIFT A  &hml LEFT_CONTROL S  &hml LEFT_ALT D  &hml LEFT_COMMAND F  &layer_1_ht 1 G        &layer_1_ht 1 H  &hmr RIGHT_COMMAND J  &hmr RSHIFT K  &hmr RIGHT_CONTROL L  &kp SEMICOLON  &kp SQT
-&kp RET    &kp Z          &kp X                &kp C            &kp V                &layer_2_ht 2 B        &layer_2_ht 2 N  &kp M                 &kp COMMA      &kp DOT               &kp FSLH       &kp ESC
+&kp TAB    &mt C_QUIT Q   &kp W                &kp E            &kp R                &layer_3_ht 3 T        &kp Y            &kp U                 &kp I          &kp O         &kp P          &kp BSPC
+&kp LCTRL  &hml LSHIFT A  &hml LEFT_CONTROL S  &hml LEFT_ALT D  &hml LEFT_COMMAND F  &layer_1_ht 1 G        &layer_1_ht 1 H  &hmr RIGHT_COMMAND J  &hmr RSHIFT K  &hmr RCTRL L  &kp SEMICOLON  &kp SQT
+&kp RET    &kp Z          &kp X                &kp C            &kp V                &layer_2_ht 2 B        &layer_2_ht 2 N  &kp M                 &kp COMMA      &kp DOT       &kp FSLH       &kp ESC
                                                &kp LGUI         &sk LSHIFT           &layer_2_ht 1 ENTER    &kp LEFT_GUI     &kp SPACE             &kp RALT
             >;
         };
