@@ -94,7 +94,7 @@
 &kp TAB  &kp Q  &kp W                &layer_3_ht 3 E  &kp R                &kp T              &kp Y            &kp U                 &layer_1_ht 1 I  &kp O         &kp P          &kp BSPC
 &trans   &kp A  &hml LEFT_COMMAND S  &hml LEFT_ALT D  &hml LEFT_CONTROL F  &layer_1_ht 1 G    &hmr LEFT_ALT H  &hmr RIGHT_COMMAND J  &hmr RSHIFT K    &hmr RCTRL L  &kp SEMICOLON  &kp SQT
 &kp RET  &kp Z  &kp X                &kp C            &layer_2_ht 2 V      &kp B              &kp N            &layer_2_ht 2 M       &kp COMMA        &kp DOT       &kp FSLH       &kp ESC
-                                     &none            &sk LSHIFT           &kp ENTER          &kp ENTER        &kp SPACE             &kp LEFT_ALT
+                                     &kp LEFT_ALT     &sk LSHIFT           &kp ENTER          &kp ENTER        &kp SPACE             &kp LEFT_ALT
             >;
         };
 
@@ -106,7 +106,7 @@
             //               | GUI | SK SHIFT  | LWR |  --  |  RSE  |   SPACE   | ALT |
 
             bindings = <
-&kp TAB     &trans        &trans        &trans        &trans        &trans          &trans  &trans     &kp UP    &trans     &trans  &kp BSPC
+&kp TAB     &none         &trans        &trans        &trans        &trans          &trans  &trans     &kp UP    &trans     &trans  &kp BSPC
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &kp LEFT   &kp DOWN  &kp RIGHT  &trans  &trans
 &kp RET     &trans        &trans        &trans        &trans        &trans          &trans  &trans     &trans    &trans     &trans  &trans
                                         &none         &sk LSHIFT    &trans          &trans  &kp SPACE  &none
