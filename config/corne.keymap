@@ -94,7 +94,7 @@
 &kp TAB  &kp Q  &kp W                &layer_3_ht 3 E  &kp R                &kp T              &kp Y            &kp U                 &layer_1_ht 1 I  &kp O         &kp P          &kp BSPC
 &trans   &kp A  &hml LEFT_COMMAND S  &hml LEFT_ALT D  &hml LEFT_CONTROL F  &layer_1_ht 1 G    &hmr LEFT_ALT H  &hmr RIGHT_COMMAND J  &hmr RSHIFT K    &hmr RCTRL L  &kp SEMICOLON  &kp SQT
 &kp RET  &kp Z  &kp X                &kp C            &layer_2_ht 2 V      &kp B              &kp N            &layer_2_ht 2 M       &kp COMMA        &kp DOT       &kp FSLH       &kp ESC
-                                     &kp LEFT_ALT     &sk LSHIFT           &kp ENTER          &kp ENTER        &kp SPACE             &kp LEFT_ALT
+                                     &kp SPACE        &sk LSHIFT           &kp ENTER          &kp ENTER        &kp SPACE             &kp LEFT_ALT
             >;
         };
 
